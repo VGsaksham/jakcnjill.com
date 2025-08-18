@@ -75,6 +75,12 @@ class GitHubDeployer:
         elif success and "origin" in output:
             print("✅ Remote origin already configured")
         
+        # Ensure we're on main branch
+        print("🔧 Setting up main branch...")
+        output, success = self.run_command("git branch -M main")
+        if success:
+            print("✅ Main branch configured")
+        
         return True
     
     def create_gitignore(self):
