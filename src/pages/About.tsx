@@ -1,10 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './About.css';
 
 const About: React.FC = () => {
   return (
     <div className="about-page">
+      <Helmet>
+        <title>About Jack & Jill Toys - Your Trusted Toy Store in Ludhiana, Punjab Since 1995</title>
+        <meta name="description" content="Learn about Jack & Jill Toys - Ludhiana's trusted toy store since 1995. Discover our story, mission, and commitment to providing quality toys for children in Punjab, India." />
+        <meta name="keywords" content="about Jack and Jill Toys, toy store history Ludhiana, trusted toys Punjab, quality children toys India, toy shop story Ludhiana" />
+        <link rel="canonical" href="https://jakcnjill.com/about" />
+        <meta property="og:title" content="About Jack & Jill Toys - Your Trusted Toy Store in Ludhiana, Punjab" />
+        <meta property="og:description" content="Learn about Jack & Jill Toys - Ludhiana's trusted toy store since 1995. Our story, mission, and commitment to quality toys." />
+        <meta property="og:url" content="https://jakcnjill.com/about" />
+      </Helmet>
       {/* Hero Section */}
       <section className="about-hero">
         <div className="container">

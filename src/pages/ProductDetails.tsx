@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { toys, categories } from '../data/toys';
 import './ProductDetails.css';
 import Zoom from 'react-medium-image-zoom';
@@ -113,6 +114,18 @@ const ProductDetails: React.FC = () => {
 
   return (
     <div className="product-details-new">
+      <Helmet>
+        <title>{toy.name} - {category?.name} | Jack & Jill Toys Ludhiana, Punjab</title>
+        <meta name="description" content={`Buy ${toy.name} at Jack & Jill Toys Ludhiana. ${toy.description} Age: ${toy.age}. Premium quality toys for kids in Punjab, India. Best prices guaranteed!`} />
+        <meta name="keywords" content={`${toy.name} Ludhiana, ${category?.name} Punjab, kids toys ${toy.age}, toy shop Ludhiana, Jack Jill toys ${toy.name}, children toys Punjab India`} />
+        <link rel="canonical" href={`https://jakcnjill.com/toy/${toy.id}`} />
+        <meta property="og:title" content={`${toy.name} - Jack & Jill Toys Ludhiana`} />
+        <meta property="og:description" content={`Buy ${toy.name} at Jack & Jill Toys Ludhiana. ${toy.description}`} />
+        <meta property="og:url" content={`https://jakcnjill.com/toy/${toy.id}`} />
+        <meta property="og:image" content={`https://jakcnjill.com${toy.image}`} />
+        <meta property="product:price:amount" content={toy.price.toString()} />
+        <meta property="product:price:currency" content="INR" />
+      </Helmet>
       {/* Hero Section with Product Image and Key Info */}
       <section className="hero-section">
         <div className="hero-container">

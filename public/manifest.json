@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Jack & Jill Toys",
+  "name": "Jack & Jill Toys - Premium Kids Toys Store in Ludhiana, Punjab",
+  "description": "Discover premium quality kids toys at Jack & Jill Toys in Ludhiana, Punjab. Wide selection of bikes, jeeps, educational toys & more.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,10 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#FF6B6B",
+  "background_color": "#ffffff",
+  "categories": ["shopping", "lifestyle", "kids"],
+  "lang": "en-IN",
+  "orientation": "portrait-primary",
+  "scope": "/"
 }

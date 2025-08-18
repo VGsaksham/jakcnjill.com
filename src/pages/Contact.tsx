@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Contact.css';
 
 const Contact: React.FC = () => {
@@ -40,6 +41,15 @@ const Contact: React.FC = () => {
 
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>Contact Jack & Jill Toys Ludhiana - Get in Touch | Punjab Toy Store</title>
+        <meta name="description" content="Contact Jack & Jill Toys in Ludhiana, Punjab. Get in touch for toy inquiries, product information, or visit our store. Phone: +91-98765-43210. Serving all of Punjab, India." />
+        <meta name="keywords" content="contact Jack and Jill Toys, toy store Ludhiana contact, Punjab toys phone number, Jack Jill toys address, toy shop Ludhiana location" />
+        <link rel="canonical" href="https://jakcnjill.com/contact" />
+        <meta property="og:title" content="Contact Jack & Jill Toys Ludhiana - Get in Touch" />
+        <meta property="og:description" content="Contact Jack & Jill Toys in Ludhiana, Punjab. Get in touch for toy inquiries, product information, or visit our store." />
+        <meta property="og:url" content="https://jakcnjill.com/contact" />
+      </Helmet>
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="container">
@@ -64,8 +74,8 @@ const Contact: React.FC = () => {
                   <div className="method-icon">📞</div>
                   <div className="method-content">
                     <h4>Phone</h4>
-                    <p>+1 (555) 123-4567</p>
-                    <small>Monday - Friday: 9AM - 6PM EST<br />Saturday: 10AM - 4PM EST</small>
+                    <p>+91-98765-43210</p>
+                    <small>Monday - Sunday: 9AM - 9PM IST<br />Always ready to help!</small>
                   </div>
                 </div>
                 
@@ -82,8 +92,8 @@ const Contact: React.FC = () => {
                   <div className="method-icon">📍</div>
                   <div className="method-content">
                     <h4>Visit Our Store</h4>
-                    <p>123 Toy Street<br />Fun City, FC 12345</p>
-                    <small>Monday - Saturday: 10AM - 8PM<br />Sunday: 12PM - 6PM</small>
+                    <p>Jack & Jill Toys<br />Ludhiana, Punjab 141001<br />India</p>
+                    <small>Monday - Sunday: 9AM - 9PM<br />Serving Ludhiana & surrounding areas</small>
                   </div>
                 </div>
                 
@@ -228,12 +238,12 @@ const Contact: React.FC = () => {
             
             <div className="faq-item">
               <h4>💳 What payment methods do you accept?</h4>
-              <p>We accept all major credit cards, PayPal, Apple Pay, Google Pay, and offer Buy Now, Pay Later options through Klarna.</p>
+              <p>We accept cash, all major credit/debit cards, UPI payments (PhonePe, Google Pay, Paytm), and bank transfers. Easy and secure payment options!</p>
             </div>
             
             <div className="faq-item">
               <h4>🏪 Can I visit your physical store?</h4>
-              <p>Yes! Our flagship store is located at 123 Toy Street, Fun City. We're open Monday-Saturday 10AM-8PM, Sunday 12PM-6PM.</p>
+              <p>Yes! Our store is located in Ludhiana, Punjab. We're open Monday-Sunday 9AM-9PM. Visit us to see our amazing collection of toys in person!</p>
             </div>
           </div>
         </div>

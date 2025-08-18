@@ -1,3 +1,25 @@
+# Jack & Jill Toys - Robots.txt
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://jakcnjill.com/sitemap.xml
+
+# Allow specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

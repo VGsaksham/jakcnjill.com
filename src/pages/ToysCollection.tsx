@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { toys, categories, Toy } from '../data/toys';
 import './ToysCollection.css';
 import Zoom from 'react-medium-image-zoom';
@@ -57,6 +58,15 @@ const ToysCollection: React.FC = () => {
 
   return (
     <div className="toys-collection">
+      <Helmet>
+        <title>Kids Toys Collection - Bikes, Jeeps & Educational Toys | Jack & Jill Toys Ludhiana</title>
+        <meta name="description" content="Browse our extensive collection of premium kids toys in Ludhiana, Punjab. Find bikes, jeeps, educational toys, and more. Quality toys for children of all ages at Jack & Jill Toys." />
+        <meta name="keywords" content="kids toys collection Ludhiana, children bikes Punjab, toy jeeps Ludhiana, educational toys Punjab, baby toys Ludhiana, toy collection India, Jack Jill toys catalog" />
+        <link rel="canonical" href="https://jakcnjill.com/toys" />
+        <meta property="og:title" content="Kids Toys Collection - Jack & Jill Toys Ludhiana" />
+        <meta property="og:description" content="Browse our extensive collection of premium kids toys in Ludhiana, Punjab. Find bikes, jeeps, educational toys, and more." />
+        <meta property="og:url" content="https://jakcnjill.com/toys" />
+      </Helmet>
       <div className="container">
         <div className="page-header">
           <h1>Our Toys Collection</h1>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { toys, Toy } from '../data/toys';
 import homeContent from '../data/homeContent.json';
 import './Home.css';
@@ -44,6 +45,15 @@ const Home: React.FC = () => {
 
   return (
     <div className="home">
+      <Helmet>
+        <title>Jack & Jill Toys - Best Kids Toys Store in Ludhiana, Punjab | Premium Quality Toys</title>
+        <meta name="description" content="Welcome to Jack & Jill Toys - Ludhiana's premier kids toy store! Discover amazing bikes, jeeps, educational toys & more. Quality toys for happy children in Punjab, India." />
+        <meta name="keywords" content="Jack and Jill Toys Ludhiana, best toy store Punjab, kids toys Ludhiana, children bikes Punjab, toy shop Ludhiana, premium toys India, educational toys Ludhiana" />
+        <link rel="canonical" href="https://jakcnjill.com/" />
+        <meta property="og:title" content="Jack & Jill Toys - Best Kids Toys Store in Ludhiana, Punjab" />
+        <meta property="og:description" content="Welcome to Jack & Jill Toys - Ludhiana's premier kids toy store! Discover amazing bikes, jeeps, educational toys & more." />
+        <meta property="og:url" content="https://jakcnjill.com/" />
+      </Helmet>
       {/* Hero Section with Cloud Design */}
       <section className="hero-section" style={heroStyle}>
         <div className="cloud-bg">
