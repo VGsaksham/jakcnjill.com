@@ -202,7 +202,7 @@ Thumbs.db
         
         # Pull any remote changes first
         print("🔄 Pulling remote changes...")
-        output, success = self.run_command("git pull origin main --allow-unrelated-histories")
+        output, success = self.run_command("git pull origin main --allow-unrelated-histories --no-edit")
         if not success:
             print("ℹ️  No remote changes to pull or first push")
         
