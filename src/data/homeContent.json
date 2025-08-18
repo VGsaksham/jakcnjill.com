@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "title": "Welcome to Jakc & Jill Toys",
+    "subtitle": "Discover amazing toys that spark imagination and create lasting memories",
+    "primaryButton": {
+      "text": "Shop Now",
+      "link": "/toys"
+    },
+    "secondaryButton": {
+      "text": "Learn More",
+      "link": "/about"
+    },
+    "image": "/img/hero-toy.jpg",
+    "imageAlt": "Kids playing with toys"
+  },
+  "featuredProducts": {
+    "title": "Featured Products",
+    "icon": "🎮",
+    "products": [
+      {
+        "id": 1,
+        "name": "Educational Building Blocks",
+        "price": 15.99,
+        "image": "/img/test1.png",
+        "badge": "20% OFF",
+        "showPrice": false
+      },
+      {
+        "id": 2,
+        "name": "Creative Art Set",
+        "price": 12.50,
+        "image": "/img/test1.png",
+        "badge": "20% OFF",
+        "showPrice": true
+      },
+      {
+        "id": 3,
+        "name": "Science Experiment Kit",
+        "price": 18.75,
+        "image": "/img/test1.png",
+        "badge": "20% OFF",
+        "showPrice": true
+      },
+      {
+        "id": 4,
+        "name": "Puzzle Collection",
+        "price": 14.25,
+        "image": "/img/test1.png",
+        "badge": "20% OFF",
+        "showPrice": true
+      },
+      {
+        "id": 5,
+        "name": "Musical Instruments",
+        "price": 22.00,
+        "image": "/img/test1.png",
+        "badge": "20% OFF",
+        "showPrice": true
+      },
+      {
+        "id": 6,
+        "name": "Outdoor Adventure Set",
+        "price": 19.98,
+        "image": "/img/test1.png",
+        "badge": "20% OFF",
+        "showPrice": true
+      },
+      {
+        "id": 7,
+        "name": "Story Books Collection",
+        "price": 16.50,
+        "image": "/img/test1.png",
+        "badge": "20% OFF",
+        "showPrice": true
+      },
+      {
+        "id": 8,
+        "name": "Board Games Pack",
+        "price": 24.75,
+        "image": "/img/test1.png",
+        "badge": "20% OFF",
+        "showPrice": true
+      }
+    ]
+  },
+  "promotions": [
+    {
+      "id": "back-to-school",
+      "title": "Back to School Sale",
+      "description": "Get ready for the new school year with our amazing collection",
+      "buttonText": "Shop Now",
+      "buttonLink": "/toys",
+      "image": "/img/hero-toy.jpg",
+      "imageAlt": "Back to School",
+      "className": "promo-section"
+    },
+    {
+      "id": "new-arrivals",
+      "title": "New Arrivals",
+      "description": "Discover the latest toys and games for your little ones",
+      "buttonText": "Explore Now",
+      "buttonLink": "/toys",
+      "image": "/img/hero-toy.jpg",
+      "imageAlt": "New Arrivals",
+      "className": "new-arrivals-section"
+    },
+    {
+      "id": "educational",
+      "title": "Educational Toys",
+      "description": "Learning through play with our carefully selected educational collection",
+      "buttonText": "Learn More",
+      "buttonLink": "/toys",
+      "image": "/img/hero-toy.jpg",
+      "imageAlt": "Educational Toys",
+      "className": "educational-section",
+      "reverse": true
+    },
+    {
+      "id": "welcome-baby",
+      "title": "Welcome Baby Born",
+      "subtitle": "Care Your Baby",
+      "description": "Everything you need for your little bundle of joy",
+      "buttonText": "Shop Baby Toys",
+      "buttonLink": "/toys",
+      "image": "/img/hero-toy.jpg",
+      "imageAlt": "Baby",
+      "className": "welcome-baby-section"
+    },
+    {
+      "id": "happy-kids",
+      "title": "Make Your Kids Happy",
+      "description": "Bring joy and laughter to your children with our amazing toy collection",
+      "buttonText": "Shop Now",
+      "buttonLink": "/toys",
+      "image": "/img/hero-toy.jpg",
+      "imageAlt": "Happy Kids",
+      "className": "happy-kids-section"
+    }
+  ]
+} 

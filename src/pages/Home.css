@@ -1,0 +1,911 @@
+/* Home Page Styles */
+.home {
+  min-height: 100vh;
+}
+
+/* Hero Section with Normal Background */
+.hero-section {
+  background: linear-gradient(135deg, rgba(68, 183, 196, 0.8) 0%, rgba(68, 183, 196, 0.6) 100%);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative pink elements */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 80px;
+  height: 80px;
+  background: var(--baby-pink);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 4s ease-in-out infinite;
+  z-index: 2;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  background: var(--baby-pink-light);
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: float 5s ease-in-out infinite reverse;
+  z-index: 2;
+}
+
+.cloud-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  opacity: 0.7;
+  animation: float 6s ease-in-out infinite;
+}
+
+.cloud-1 {
+  width: 100px;
+  height: 40px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.cloud-2 {
+  width: 80px;
+  height: 30px;
+  top: 30%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.cloud-3 {
+  width: 120px;
+  height: 50px;
+  top: 60%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+.cloud-4 {
+  width: 90px;
+  height: 35px;
+  top: 40%;
+  right: 30%;
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-buttons .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-buttons .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 182, 193, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.hero-buttons .btn:hover::before {
+  left: 100%;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image {
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  background: var(--baby-pink-light);
+  padding: 2rem;
+  border-radius: 12px;
+  flex-direction: column;
+}
+
+.section-header::before {
+  display: none;
+}
+
+.section-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Enhanced Refresh Indicator */
+.refresh-indicator {
+  font-size: 1.5rem;
+  animation: spin 3s linear infinite;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.refresh-indicator:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Section Subtitle */
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Loading State */
+.loading-products {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--baby-pink-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.loading-spinner {
+  font-size: 3rem;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.loading-products p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Product Card */
+.product-card {
+  background: var(--baby-pink-light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+}
+
+.product-card::before {
+  display: none;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--baby-pink);
+}
+
+.card-image-container {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--baby-pink);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.card-price {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+}
+
+.price-amount {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.btn-full {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+/* Featured Section */
+.featured-section {
+  padding: 4rem 0;
+  background: var(--baby-pink-light);
+}
+
+/* Cloud Cut-out Sections */
+.promo-section,
+.educational-section,
+.happy-kids-section {
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cloud-cutout {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cloud-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--baby-pink);
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.cloud-cutout.reverse .cloud-shape {
+  background: var(--primary-color);
+}
+
+.promo-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+}
+
+.promo-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.promo-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.promo-image {
+  text-align: center;
+}
+
+.promo-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* New Arrivals Section */
+.new-arrivals-section {
+  padding: 4rem 0;
+  background: var(--baby-pink-light);
+}
+
+.arrivals-card {
+  background: var(--baby-pink-light);
+  border-radius: 12px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.arrivals-card::before {
+  display: none;
+}
+
+.arrivals-content h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.arrivals-content p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.arrivals-image {
+  text-align: center;
+}
+
+.arrivals-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Baby Section */
+.welcome-baby-section {
+  padding: 4rem 0;
+  background: var(--baby-pink-light);
+}
+
+.welcome-card {
+  background: var(--baby-pink);
+  border-radius: 12px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  color: white;
+  box-shadow: 0 8px 25px var(--pink-shadow);
+}
+
+.welcome-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.welcome-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.welcome-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.welcome-image {
+  text-align: center;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Mobile Responsive Design */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  
+  .product-card {
+    height: 360px;
+  }
+  
+  .card-image-container {
+    height: 210px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 1.5rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.1;
+  }
+  
+  .hero-text p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .hero-buttons {
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    padding: 1rem 1.75rem;
+    font-size: 1rem;
+    min-height: 48px;
+    flex: 1;
+    min-width: 140px;
+  }
+  
+  .section-header {
+    margin-bottom: 2.5rem;
+    padding: 1.75rem 1.5rem;
+    gap: 0.75rem;
+  }
+  
+  .section-icon {
+    font-size: 2.5rem;
+    margin-right: 0;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .refresh-indicator {
+    font-size: 1.2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .loading-products {
+    padding: 3rem 1.5rem;
+  }
+  
+  .loading-spinner {
+    font-size: 2.5rem;
+  }
+  
+  .loading-products p {
+    font-size: 1rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .product-card {
+    height: 350px;
+    border-radius: 16px;
+  }
+  
+  .card-image-container {
+    height: 200px;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .btn-full {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+    border-radius: 12px;
+  }
+  
+  .promo-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    gap: 2rem;
+  }
+  
+  .promo-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .promo-text p {
+    font-size: 1.05rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .arrivals-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    gap: 2rem;
+  }
+  
+  .arrivals-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .arrivals-content p {
+    font-size: 1.05rem;
+  }
+  
+  .welcome-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    gap: 2rem;
+  }
+  
+  .welcome-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .welcome-content h3 {
+    font-size: 1.6rem;
+  }
+  
+  .welcome-content p {
+    font-size: 1.05rem;
+  }
+  
+  .cloud {
+    display: none;
+  }
+  
+  /* Better mobile section spacing */
+  .featured-section {
+    padding: 3rem 0;
+  }
+  
+  .promo-section,
+  .educational-section,
+  .happy-kids-section {
+    padding: 4rem 0;
+  }
+  
+  .new-arrivals-section,
+  .welcome-baby-section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 90vh;
+    padding: 2rem 0;
+  }
+  
+  .hero-content {
+    padding: 0 1rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+    line-height: 1.4;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.95rem;
+    border-radius: 12px;
+  }
+  
+  .section-header {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.9rem;
+  }
+  
+  .section-icon {
+    font-size: 2.2rem;
+  }
+  
+  .refresh-indicator {
+    font-size: 1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .loading-products {
+    padding: 2.5rem 1rem;
+  }
+  
+  .loading-spinner {
+    font-size: 2rem;
+  }
+  
+  .loading-products p {
+    font-size: 0.95rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .product-card {
+    height: 320px;
+    border-radius: 12px;
+  }
+  
+  .card-image-container {
+    height: 180px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  
+  .price-amount {
+    font-size: 1rem;
+  }
+  
+  .btn-full {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+    min-height: 42px;
+  }
+  
+  .promo-content {
+    padding: 2rem 1rem;
+  }
+  
+  .promo-text h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-text p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .arrivals-card {
+    padding: 2rem 1rem;
+  }
+  
+  .arrivals-content h2 {
+    font-size: 1.9rem;
+  }
+  
+  .arrivals-content p {
+    font-size: 0.95rem;
+  }
+  
+  .welcome-card {
+    padding: 2rem 1rem;
+  }
+  
+  .welcome-content h2 {
+    font-size: 1.9rem;
+  }
+  
+  .welcome-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .welcome-content p {
+    font-size: 0.95rem;
+  }
+  
+  /* Tighter mobile spacing */
+  .featured-section {
+    padding: 2.5rem 0;
+  }
+  
+  .promo-section,
+  .educational-section,
+  .happy-kids-section {
+    padding: 3rem 0;
+  }
+  
+  .new-arrivals-section,
+  .welcome-baby-section {
+    padding: 2.5rem 0;
+  }
+  
+  /* Better mobile decorative elements */
+  .hero-section::before {
+    width: 60px;
+    height: 60px;
+    top: 15%;
+    right: 8%;
+  }
+  
+  .hero-section::after {
+    width: 45px;
+    height: 45px;
+    bottom: 25%;
+    left: 8%;
+  }
+} 

@@ -1,0 +1,30 @@
+{
+  "repository": {
+    "url": "https://github.com/VGsaksham/jakcnjill.com.git",
+    "name": "jakcnjill.com",
+    "branch": "main"
+  },
+  "website": {
+    "directory": "jakcnjill.in",
+    "name": "Jack & Jill Toys Website",
+    "description": "Professional toy store website with mobile-optimized design"
+  },
+  "deployment": {
+    "auto_commit": true,
+    "auto_push": true,
+    "include_timestamp": true,
+    "create_gitignore": true
+  },
+  "git": {
+    "user_name": "",
+    "user_email": "",
+    "commit_message_template": "Update {website_name} - {changes} ({timestamp})"
+  },
+  "exclusions": [
+    "node_modules/",
+    ".env*",
+    "*.log",
+    ".DS_Store",
+    "Thumbs.db"
+  ]
+} 
