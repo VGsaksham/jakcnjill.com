@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 import { toys, categories, Toy } from '../data/toys';
 import './ToysCollection.css';
 import Zoom from 'react-medium-image-zoom';

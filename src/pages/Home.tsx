@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 import { toys, Toy } from '../data/toys';
 import homeContent from '../data/homeContent.json';
 import './Home.css';
