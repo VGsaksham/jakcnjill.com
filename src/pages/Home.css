@@ -593,21 +593,16 @@
   }
   
   .section-header {
-    margin-bottom: 2.5rem;
     padding: 1.75rem 1.5rem;
-    gap: 0.75rem;
-  }
-  
-  .section-icon {
-    font-size: 2.5rem;
-    margin-right: 0;
+    margin-bottom: 2.5rem;
   }
   
   .section-title {
     font-size: 2.2rem;
-    text-align: center;
-    flex-direction: column;
-    gap: 0.5rem;
+  }
+  
+  .section-icon {
+    font-size: 2.5rem;
   }
   
   .refresh-indicator {
@@ -615,8 +610,7 @@
   }
   
   .section-subtitle {
-    font-size: 0.9rem;
-    text-align: center;
+    font-size: 0.95rem;
   }
   
   .loading-products {
@@ -637,7 +631,7 @@
   }
   
   .product-card {
-    height: 350px;
+    height: 380px; /* Increased height to accommodate content */
     border-radius: 16px;
   }
   
@@ -647,18 +641,31 @@
   
   .card-body {
     padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
   }
   
   .card-title {
     font-size: 0.9rem;
     margin-bottom: 0.75rem;
+    line-height: 1.3;
+    flex-shrink: 0;
+  }
+  
+  .card-price {
+    margin-bottom: 1rem;
+    flex-shrink: 0;
   }
   
   .btn-full {
-    padding: 0.75rem;
+    padding: 0.85rem 0.75rem; /* Increased padding */
     font-size: 0.9rem;
-    min-height: 44px;
+    min-height: 46px; /* Increased min-height */
     border-radius: 12px;
+    margin-top: auto;
+    flex-shrink: 0;
   }
   
   .promo-content {
@@ -721,24 +728,20 @@
     padding: 3rem 0;
   }
   
-  .promo-section,
-  .educational-section,
-  .happy-kids-section {
-    padding: 4rem 0;
+  .promo-section {
+    padding: 3rem 0;
   }
   
-  .new-arrivals-section,
+  .new-arrivals-section {
+    padding: 3rem 0;
+  }
+  
   .welcome-baby-section {
     padding: 3rem 0;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-section {
-    min-height: 90vh;
-    padding: 2rem 0;
-  }
-  
   .hero-content {
     padding: 0 1rem;
   }
@@ -808,7 +811,7 @@
   }
   
   .product-card {
-    height: 320px;
+    height: 360px; /* Increased from 320px to 360px */
     border-radius: 12px;
   }
   
@@ -818,12 +821,22 @@
   
   .card-body {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
   }
   
   .card-title {
     font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem; /* Increased from 0.5rem */
     line-height: 1.2;
+    flex-shrink: 0;
+  }
+  
+  .card-price {
+    margin-bottom: 1rem; /* Added explicit margin */
+    flex-shrink: 0;
   }
   
   .price-amount {
@@ -831,9 +844,12 @@
   }
   
   .btn-full {
-    padding: 0.75rem 0.5rem;
+    padding: 0.8rem 0.6rem; /* Increased padding */
     font-size: 0.85rem;
-    min-height: 42px;
+    min-height: 44px; /* Increased from 42px */
+    margin-top: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
   }
   
   .promo-content {
@@ -878,34 +894,20 @@
     font-size: 0.95rem;
   }
   
-  /* Tighter mobile spacing */
+  /* Better mobile section spacing */
   .featured-section {
     padding: 2.5rem 0;
   }
   
-  .promo-section,
-  .educational-section,
-  .happy-kids-section {
-    padding: 3rem 0;
-  }
-  
-  .new-arrivals-section,
-  .welcome-baby-section {
+  .promo-section {
     padding: 2.5rem 0;
   }
   
-  /* Better mobile decorative elements */
-  .hero-section::before {
-    width: 60px;
-    height: 60px;
-    top: 15%;
-    right: 8%;
+  .new-arrivals-section {
+    padding: 2.5rem 0;
   }
   
-  .hero-section::after {
-    width: 45px;
-    height: 45px;
-    bottom: 25%;
-    left: 8%;
+  .welcome-baby-section {
+    padding: 2.5rem 0;
   }
 } 
