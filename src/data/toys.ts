@@ -576,9 +576,9 @@ export const toys: Toy[] = [
     price: 7999,
     category: "bikes",
     age: "6-12 years",
-    image: "/img/bikes/img28.jpg",
+    image: "/img/bikes/img28.png",
     images: [
-      "/img/bikes/img28.jpg",
+      "/img/bikes/img28.png",
       "/img/bikes/img29.jpg"
     ],
     features: ["Electric Powered", "Smooth Handling", "Modern Design", "LED Lights", "Safe Controls", "Parent Remote"],
