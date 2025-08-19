@@ -927,18 +927,45 @@
   .hero-container {
     padding: 0 1rem;
     gap: 2rem;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    max-width: 100%; /* Full width container */
+  }
+  
+  .image-gallery {
+    width: 100%;
+    max-width: 400px; /* Fixed max-width for consistent layout */
+    margin: 0 auto; /* Center the image gallery */
   }
   
   .main-image-wrapper {
     height: 350px;
     border-radius: 16px;
     overflow: hidden;
+    width: 100%; /* Full width within the constrained gallery */
+    max-width: 400px; /* Match the gallery max-width */
+    margin: 0 auto; /* Center within gallery if needed */
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure image fits within bounds */
+  }
+  
+  /* Product info section - constrain width for consistency */
+  .product-info {
+    width: 100%;
+    max-width: 400px; /* Match image gallery width */
+    margin: 0 auto; /* Center the content */
   }
   
   .product-title {
     font-size: 2.2rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
+    text-align: center; /* Center title on mobile */
   }
   
   .amount {
@@ -951,11 +978,13 @@
     text-align: center;
     padding: 1.75rem;
     border-radius: 16px;
+    width: 100%;
   }
   
   .action-section {
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
   }
   
   .get-product-button {
@@ -964,16 +993,19 @@
     font-size: 1.1rem;
     border-radius: 12px;
     min-height: 56px;
+    width: 100%;
   }
   
   .product-badges {
     flex-direction: column;
     gap: 0.75rem;
+    width: 100%;
   }
   
   .product-highlights {
     flex-direction: column;
     gap: 0.75rem;
+    width: 100%;
   }
   
   .category-badge, 
@@ -982,11 +1014,15 @@
     padding: 1rem 1.5rem;
     border-radius: 12px;
     font-size: 0.95rem;
+    width: 100%;
+    text-align: center;
   }
   
   .guarantee-section {
     grid-template-columns: 1fr;
     gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   .guarantee-item {
@@ -1121,17 +1157,43 @@
   .hero-container {
     padding: 0 0.75rem;
     gap: 1.5rem;
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  
+  .image-gallery {
+    width: 100%;
+    max-width: 320px; /* Smaller fixed max-width for small screens */
+    margin: 0 auto;
   }
   
   .main-image-wrapper {
     height: 300px;
     border-radius: 12px;
+    width: 100%;
+    max-width: 320px; /* Match gallery max-width */
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Product info section - constrain width for consistency */
+  .product-info {
+    width: 100%;
+    max-width: 320px; /* Match image gallery width */
+    margin: 0 auto;
   }
   
   .product-title {
     font-size: 1.9rem;
     line-height: 1.1;
     margin-bottom: 1.25rem;
+    text-align: center;
   }
   
   .amount {
@@ -1142,21 +1204,28 @@
     padding: 1.5rem;
     gap: 1rem;
     border-radius: 12px;
+    width: 100%;
   }
   
   .get-product-button {
     padding: 1rem 1.5rem;
     font-size: 1rem;
     min-height: 52px;
-    border-radius: 10px;
+    width: 100%;
   }
   
   .category-badge, 
   .age-badge,
   .highlight-item {
     padding: 0.875rem 1.25rem;
-    border-radius: 10px;
     font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .guarantee-section {
+    max-width: 320px;
+    margin: 0 auto;
   }
   
   .guarantee-item {
@@ -1168,25 +1237,17 @@
     font-size: 1.75rem;
   }
   
+  .guarantee-content h4 {
+    font-size: 0.95rem;
+  }
+  
+  .guarantee-content p {
+    font-size: 0.85rem;
+  }
+  
   .details-section {
     padding: 3rem 0;
-    border-radius: 20px 20px 0 0;
-  }
-  
-  .details-container {
-    padding: 0 0.75rem;
-  }
-  
-  .details-tabs {
-    padding: 0.25rem;
-    gap: 0.25rem;
-  }
-  
-  .tab {
-    min-width: 100px;
-    padding: 0.875rem 1.25rem;
-    font-size: 0.9rem;
-    border-radius: 10px;
+    margin-top: -1rem;
   }
   
   .tab-content {
@@ -1202,6 +1263,7 @@
   
   .product-description {
     font-size: 0.95rem;
+    line-height: 1.5;
     margin-bottom: 2rem;
   }
   
@@ -1210,40 +1272,13 @@
     border-radius: 10px;
   }
   
-  .spec-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .spec-item {
-    padding: 1rem;
-    border-radius: 10px;
-  }
-  
-  .related-section {
-    padding: 3rem 0;
-  }
-  
-  .related-container {
-    padding: 0 0.75rem;
-  }
-  
-  .section-header h2 {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  .section-header p {
-    font-size: 1rem;
-  }
-  
   .related-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
   
   .related-card {
-    min-height: 420px;
+    min-height: 350px;
     border-radius: 12px;
   }
   
@@ -1251,22 +1286,11 @@
     padding: 1.5rem;
   }
   
-  .card-title {
-    font-size: 1.2rem;
-  }
-  
   .card-button {
+    border-radius: 10px;
     padding: 0.875rem 1.25rem;
     height: 48px;
-    border-radius: 10px;
-  }
-  
-  .cta-section {
-    padding: 3rem 0;
-  }
-  
-  .cta-container {
-    padding: 0 0.75rem;
+    font-size: 0.95rem;
   }
   
   .cta-content h2 {
@@ -1288,44 +1312,27 @@
     padding: 1rem 1.5rem;
     font-size: 0.95rem;
     min-height: 48px;
-    border-radius: 10px;
   }
   
   .whatsapp-popup {
-    width: 98%;
+    width: 96%;
     margin: 0.5rem;
     margin-top: 70px;
     border-radius: 12px;
   }
   
   .popup-header {
-    padding: 1.5rem 1.25rem 0.75rem 1.25rem;
+    padding: 1.75rem 1.25rem 0.75rem 1.25rem;
     border-radius: 12px 12px 0 0;
   }
   
-  .popup-header h3 {
-    font-size: 1.3rem;
-  }
-  
   .popup-content {
-    padding: 1.5rem 1.25rem;
+    padding: 1.5rem;
   }
   
   .whatsapp-contact {
     padding: 1rem;
     border-radius: 10px;
-    min-height: 68px;
-  }
-  
-  .contact-icon {
-    font-size: 1.5rem;
-  }
-  
-  .contact-name {
-    font-size: 1rem;
-  }
-  
-  .contact-number {
-    font-size: 0.85rem;
+    min-height: 64px;
   }
 } 
