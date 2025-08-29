@@ -55,7 +55,10 @@ const ProductDetails: React.FC = () => {
   ];
 
   const handleWhatsAppClick = (number: string) => {
-    const message = `Hi! I'm interested in the ${toy.name} toy. Can you provide more details about availability and pricing?`;
+    const productUrl = `https://jakcnjill.com/toy/${toy.id}`;
+    const imagePath = toy.images && toy.images.length > 0 ? (toy.images[selectedImage] || toy.image) : toy.image;
+    const imageUrl = `https://jakcnjill.com${imagePath}`;
+    const message = `Hi! I'm interested in the ${toy.name} toy.\nProduct link: ${productUrl}\nImage: ${imageUrl}\nCan you provide more details about availability and pricing?`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${number.replace(/\D/g, '')}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');

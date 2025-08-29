@@ -22,12 +22,12 @@ export const toys: Toy[] = [
     price: 25999,
     category: "cars/rideables",
     age: "2-14 years",
-    image: "img/jeep/img34.jpg",
+    image: "/img/jeep/img34.jpg",
     images: [
-      "img/jeep/img34.jpg",
-      "img/jeep/img35.jpg", 
-      "img/jeep/img36.jpg",
-      "img/jeep/img40.jpg"
+      "/img/jeep/img34.jpg",
+      "/img/jeep/img35.jpg", 
+      "/img/jeep/img36.jpg",
+      "/img/jeep/img40.jpg"
     ],
     features: ["WEIGHT CAPACITY: 100 Kgs", "SELF DRIVING: Yes", "REMOTE CONTROL: Yes", "6 Motors", "Built-in Music System", "LED Headlights", "4x4 Drive"],
     inStock: true,
@@ -98,8 +98,7 @@ export const toys: Toy[] = [
     age: "8-14 years",
     image: "/img/jeep/img41.jpg",
     images: [
-      "/img/jeep/img41.jpg",
-      "/img/jeep/img42.jpg"
+      "/img/jeep/img41.jpg"
     ],
     features: ["GPS Tracking", "Advanced Motor System", "Music Player", "LED Display", "Safety Alerts", "Long Battery Life"],
     inStock: true,
@@ -692,6 +691,738 @@ export const toys: Toy[] = [
     inStock: true,
     rating: 4.6,
     reviews: 234,
+    showPrice: false
+  },
+  {
+    id: 39,
+    name: "Electric Kids Bike (1)",
+    description: "Battery operated kids bike. New image upload.",
+    price: 7999,
+    category: "bikes",
+    age: "4-12 years",
+    image: "/img/bikes/img (1).jpeg",
+    images: [
+      "/img/bikes/img (1).jpeg"
+    ],
+    features: ["Battery Operated", "LED Lights", "Safe Controls", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 40,
+    name: "Electric Kids Bike (12)",
+    description: "Battery operated kids bike. New image upload.",
+    price: 7999,
+    category: "bikes",
+    age: "4-12 years",
+    image: "/img/bikes/img (12).jpeg",
+    images: [
+      "/img/bikes/img (12).jpeg"
+    ],
+    features: ["Battery Operated", "LED Lights", "Safe Controls", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 41,
+    name: "Electric Kids Bike (17)",
+    description: "Battery operated kids bike. New image upload.",
+    price: 7999,
+    category: "bikes",
+    age: "4-12 years",
+    image: "/img/bikes/img (17).jpeg",
+    images: [
+      "/img/bikes/img (17).jpeg"
+    ],
+    features: ["Battery Operated", "LED Lights", "Safe Controls", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 42,
+    name: "Electric Kids Bike (20)",
+    description: "Battery operated kids bike. New image upload.",
+    price: 7999,
+    category: "bikes",
+    age: "4-12 years",
+    image: "/img/bikes/img (20).jpeg",
+    images: [
+      "/img/bikes/img (20).jpeg"
+    ],
+    features: ["Battery Operated", "LED Lights", "Safe Controls", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 43,
+    name: "Electric Kids Bike (25)",
+    description: "Battery operated kids bike. New image upload.",
+    price: 7999,
+    category: "bikes",
+    age: "4-12 years",
+    image: "/img/bikes/img (25).jpeg",
+    images: [
+      "/img/bikes/img (25).jpeg"
+    ],
+    features: ["Battery Operated", "LED Lights", "Safe Controls", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 44,
+    name: "Electric Kids Bike (29)",
+    description: "Battery operated kids bike. New image upload.",
+    price: 7999,
+    category: "bikes",
+    age: "4-12 years",
+    image: "/img/bikes/img (29).jpeg",
+    images: [
+      "/img/bikes/img (29).jpeg"
+    ],
+    features: ["Battery Operated", "LED Lights", "Safe Controls", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 45,
+    name: "Electric Kids Bike (41)",
+    description: "Battery operated kids bike. New image upload.",
+    price: 7999,
+    category: "bikes",
+    age: "4-12 years",
+    image: "/img/bikes/img (41).jpeg",
+    images: [
+      "/img/bikes/img (41).jpeg"
+    ],
+    features: ["Battery Operated", "LED Lights", "Safe Controls", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 46,
+    name: "Electric Jeep (2)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (2).jpeg",
+    images: [
+      "/img/jeep/img (2).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 47,
+    name: "Electric Jeep (3)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (3).jpeg",
+    images: [
+      "/img/jeep/img (3).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 48,
+    name: "Electric Jeep (4)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (4).jpeg",
+    images: [
+      "/img/jeep/img (4).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 49,
+    name: "Electric Jeep (5)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (5).jpeg",
+    images: [
+      "/img/jeep/img (5).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 50,
+    name: "Electric Jeep (6)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (6).jpeg",
+    images: [
+      "/img/jeep/img (6).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 51,
+    name: "Electric Jeep (7)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (7).jpeg",
+    images: [
+      "/img/jeep/img (7).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 52,
+    name: "Electric Jeep (8)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (8).jpeg",
+    images: [
+      "/img/jeep/img (8).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 53,
+    name: "Electric Jeep (9)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (9).jpeg",
+    images: [
+      "/img/jeep/img (9).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 54,
+    name: "Electric Jeep (10)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (10).jpeg",
+    images: [
+      "/img/jeep/img (10).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 55,
+    name: "Electric Jeep (11)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (11).jpeg",
+    images: [
+      "/img/jeep/img (11).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 56,
+    name: "Electric Jeep (13)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (13).jpeg",
+    images: [
+      "/img/jeep/img (13).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 57,
+    name: "Electric Jeep (14)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (14).jpeg",
+    images: [
+      "/img/jeep/img (14).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 58,
+    name: "Electric Jeep (18)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (18).jpeg",
+    images: [
+      "/img/jeep/img (18).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 59,
+    name: "Electric Jeep (19)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (19).jpeg",
+    images: [
+      "/img/jeep/img (19).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 60,
+    name: "Electric Jeep (21)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (21).jpeg",
+    images: [
+      "/img/jeep/img (21).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 61,
+    name: "Electric Jeep (23)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (23).jpeg",
+    images: [
+      "/img/jeep/img (23).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 62,
+    name: "Electric Jeep (27)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (27).jpeg",
+    images: [
+      "/img/jeep/img (27).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 63,
+    name: "Electric Jeep (28)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (28).jpeg",
+    images: [
+      "/img/jeep/img (28).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 64,
+    name: "Electric Jeep (30)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (30).jpeg",
+    images: [
+      "/img/jeep/img (30).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 65,
+    name: "Electric Jeep (31)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (31).jpeg",
+    images: [
+      "/img/jeep/img (31).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 66,
+    name: "Electric Jeep (32)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (32).jpeg",
+    images: [
+      "/img/jeep/img (32).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 67,
+    name: "Electric Jeep (33)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (33).jpeg",
+    images: [
+      "/img/jeep/img (33).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 68,
+    name: "Electric Jeep (34)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (34).jpeg",
+    images: [
+      "/img/jeep/img (34).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 69,
+    name: "Electric Jeep (35)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (35).jpeg",
+    images: [
+      "/img/jeep/img (35).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 70,
+    name: "Electric Jeep (36)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (36).jpeg",
+    images: [
+      "/img/jeep/img (36).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 71,
+    name: "Electric Jeep (37)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (37).jpeg",
+    images: [
+      "/img/jeep/img (37).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 72,
+    name: "Electric Jeep (38)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (38).jpeg",
+    images: [
+      "/img/jeep/img (38).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 73,
+    name: "Electric Jeep (42)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (42).jpeg",
+    images: [
+      "/img/jeep/img (42).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 74,
+    name: "Electric Jeep (43)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (43).jpeg",
+    images: [
+      "/img/jeep/img (43).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 75,
+    name: "Electric Jeep (44)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (44).jpeg",
+    images: [
+      "/img/jeep/img (44).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 76,
+    name: "Electric Jeep (45)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (45).jpeg",
+    images: [
+      "/img/jeep/img (45).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 77,
+    name: "Electric Jeep (46)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (46).jpeg",
+    images: [
+      "/img/jeep/img (46).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+
+  {
+    id: 79,
+    name: "Electric Jeep (48)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (48).jpeg",
+    images: [
+      "/img/jeep/img (48).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 80,
+    name: "Electric Jeep (49)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (49).jpeg",
+    images: [
+      "/img/jeep/img (49).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 81,
+    name: "Electric Jeep (50)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (50).jpeg",
+    images: [
+      "/img/jeep/img (50).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 82,
+    name: "Electric Jeep (51)",
+    description: "Electric ride-on jeep. New image upload.",
+    price: 15999,
+    category: "cars/rideables",
+    age: "4-12 years",
+    image: "/img/jeep/img (51).jpeg",
+    images: [
+      "/img/jeep/img (51).jpeg"
+    ],
+    features: ["Remote Control", "LED Lights", "Music System", "Durable Build"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
     showPrice: false
   }
 ];
