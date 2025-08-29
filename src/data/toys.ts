@@ -24,10 +24,7 @@ export const toys: Toy[] = [
     age: "2-14 years",
     image: "/img/jeep/img34.jpg",
     images: [
-      "/img/jeep/img34.jpg",
-      "/img/jeep/img35.jpg", 
-      "/img/jeep/img36.jpg",
-      "/img/jeep/img40.jpg"
+      "/img/jeep/img34.jpg"
     ],
     features: ["WEIGHT CAPACITY: 100 Kgs", "SELF DRIVING: Yes", "REMOTE CONTROL: Yes", "6 Motors", "Built-in Music System", "LED Headlights", "4x4 Drive"],
     inStock: true,
