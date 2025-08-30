@@ -10,6 +10,8 @@ const ToysCollection: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('name');
+  const [visibleCount, setVisibleCount] = useState(30);
+  const PAGE_SIZE = 30;
   
   const categoryFilter = searchParams.get('category') || '';
 
@@ -42,6 +44,11 @@ const ToysCollection: React.FC = () => {
     return filtered;
   }, [searchTerm, categoryFilter, sortBy]);
 
+  // Reset visible count when filters/search/sort change
+  React.useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [searchTerm, categoryFilter, sortBy]);
+
   const handleCategoryFilter = (category: string) => {
     if (category === categoryFilter) {
       setSearchParams({});
@@ -54,6 +61,7 @@ const ToysCollection: React.FC = () => {
     setSearchParams({});
     setSearchTerm('');
     setSortBy('name');
+    setVisibleCount(PAGE_SIZE);
   };
 
   return (
@@ -128,7 +136,7 @@ const ToysCollection: React.FC = () => {
         {/* Results Info */}
         <div className="results-info">
           <p>
-            Showing {filteredAndSortedToys.length} of {toys.length} toys
+            Showing {Math.min(visibleCount, filteredAndSortedToys.length)} of {filteredAndSortedToys.length} items
             {categoryFilter && (
               <span> in "{categories.find(c => c.id === categoryFilter)?.name}"</span>
             )}
@@ -139,11 +147,11 @@ const ToysCollection: React.FC = () => {
         {/* Toys Grid */}
         {filteredAndSortedToys.length > 0 ? (
           <div className="products-grid">
-            {filteredAndSortedToys.map(toy => (
+            {filteredAndSortedToys.slice(0, visibleCount).map(toy => (
               <div key={toy.id} className={`product-card ${!toy.inStock ? 'out-of-stock' : ''}`}>
                 <div className="card-image-container">
                   <Zoom>
-                    <img src={toy.image} alt={toy.name} className="card-image" />
+                    <img src={toy.image} alt={toy.name} className="card-image" loading="lazy" />
                   </Zoom>
                   {!toy.inStock && <div className="out-of-stock-badge">Out of Stock</div>}
                   <div className="card-badge">20% OFF</div>
@@ -173,6 +181,18 @@ const ToysCollection: React.FC = () => {
             <p>Try adjusting your search terms or filters.</p>
             <button onClick={clearFilters} className="btn btn-primary">
               Clear Filters
+            </button>
+          </div>
+        )}
+
+        {/* Load More */}
+        {visibleCount < filteredAndSortedToys.length && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
+            <button
+              className="btn btn-primary"
+              onClick={() => setVisibleCount(prev => Math.min(prev + PAGE_SIZE, filteredAndSortedToys.length))}
+            >
+              Load More
             </button>
           </div>
         )}
