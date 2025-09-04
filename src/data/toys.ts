@@ -1421,13 +1421,443 @@ export const toys: Toy[] = [
     rating: 4.6,
     reviews: 0,
     showPrice: false
+  },
+  {
+    id: 83,
+    name: "3-Stage Baby Tub",
+    description: "Comfortable 3-stage baby bath tub designed to grow with your child from newborn to toddler.",
+    price: 0,
+    category: "baby",
+    age: "0-3 years",
+    image: "/img/baby/3_stage_tub.jpg",
+    images: [
+      "/img/baby/3_stage_tub.jpg"
+    ],
+    features: ["3-stage support", "Non-slip base", "Easy drain"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 84,
+    name: "Wind-Up Baby Crib",
+    description: "Classic wind-up baby crib with soothing motion to help your little one sleep peacefully.",
+    price: 0,
+    category: "baby",
+    age: "0-3 years",
+    image: "/img/baby/windup_baby_crib.jpg",
+    images: [
+      "/img/baby/windup_baby_crib.jpg"
+    ],
+    features: ["Gentle rocking", "Sturdy build", "Cozy mattress"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 85,
+    name: "Baby Crib",
+    description: "Safe and comfortable baby crib with premium finish and breathable sides.",
+    price: 0,
+    category: "baby",
+    age: "0-3 years",
+    image: "/img/baby/baby_crib.jpg",
+    images: [
+      "/img/baby/baby_crib.jpg"
+    ],
+    features: ["Breathable mesh", "Premium finish", "Easy to clean"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 86,
+    name: "Deluxe 4-in-1 Bassinet",
+    description: "Multi-functional 4-in-1 bassinet for sleep, play, and travel convenience.",
+    price: 0,
+    category: "baby",
+    age: "0-2 years",
+    image: "/img/baby/delux_4_in_1_bassinet.jpg",
+    images: [
+      "/img/baby/delux_4_in_1_bassinet.jpg"
+    ],
+    features: ["4-in-1 design", "Lightweight", "Travel-friendly"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 87,
+    name: "Deluxe Multi-Motion Baby Cradle",
+    description: "Soothing multi-motion cradle that mimics natural rocking to calm babies.",
+    price: 0,
+    category: "baby",
+    age: "0-2 years",
+    image: "/img/baby/delux_multimotion_baby_cradel.jpg",
+    images: [
+      "/img/baby/delux_multimotion_baby_cradel.jpg"
+    ],
+    features: ["Multiple motions", "Quiet motor", "Soft padding"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 88,
+    name: "Jellybeanfab Convertible Baby Cradle",
+    description: "Convertible baby cradle with gentle rocking and breathable design.",
+    price: 0,
+    category: "baby",
+    age: "0-2 years",
+    image: "/img/baby/jellybeanfab_convertible_baby_craddle.jpg",
+    images: [
+      "/img/baby/jellybeanfab_convertible_baby_craddle.jpg"
+    ],
+    features: ["Convertible design", "Breathable mesh", "Easy assembly"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 89,
+    name: "Tiny Tots Panda Potty Trainer",
+    description: "Cute panda-themed potty trainer to make toilet training easy and fun.",
+    price: 0,
+    category: "baby",
+    age: "1-4 years",
+    image: "/img/baby/tiny_tots_panda_potty_trainer.jpg",
+    images: [
+      "/img/baby/tiny_tots_panda_potty_trainer.jpg"
+    ],
+    features: ["Comfortable seat", "Anti-slip base", "Easy to clean"],
+    inStock: true,
+    rating: 4.8,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 90,
+    name: "HilTop Trainer Potty Seat",
+    description: "Ergonomic potty training seat designed for comfort and stability.",
+    price: 0,
+    category: "baby",
+    age: "1-4 years",
+    image: "/img/baby/hiltop_trianer_potty_seat.jpeg",
+    images: [
+      "/img/baby/hiltop_trianer_potty_seat.jpeg"
+    ],
+    features: ["Ergonomic design", "Secure fit", "Easy to wash"],
+    inStock: true,
+    rating: 4.4,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 91,
+    name: "Toddler Portable Rocker",
+    description: "Lightweight portable rocker with soothing vibrations for nap time and playtime.",
+    price: 0,
+    category: "baby",
+    age: "0-3 years",
+    image: "/img/baby/todder_portable_rocker.jpg",
+    images: [
+      "/img/baby/todder_portable_rocker.jpg"
+    ],
+    features: ["Portable", "Soothing vibrations", "Washable cover"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 92,
+    name: "Rock N Play Rockerz",
+    description: "Comfortable rocker with supportive seat and gentle rocking motion.",
+    price: 0,
+    category: "baby",
+    age: "0-3 years",
+    image: "/img/baby/rock_n_play_rockerz.jpg",
+    images: [
+      "/img/baby/rock_n_play_rockerz.jpg"
+    ],
+    features: ["Gentle rocking", "Supportive seat", "Safety harness"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 93,
+    name: "Walk N Ride 3-in-1 Convertible",
+    description: "Versatile 3-in-1 walker and ride-on to support your baby's first steps and play.",
+    price: 0,
+    category: "baby",
+    age: "1-4 years",
+    image: "/img/baby/walk_n_ride_3_in_1_convertible.jpg",
+    images: [
+      "/img/baby/walk_n_ride_3_in_1_convertible.jpg"
+    ],
+    features: ["3-in-1 design", "Sturdy wheels", "Interactive panel"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 94,
+    name: "Baby Walker",
+    description: "Safe and sturdy baby walker to encourage independent movement.",
+    price: 0,
+    category: "baby",
+    age: "1-3 years",
+    image: "/img/baby/babywalker(1).jpeg",
+    images: [
+      "/img/baby/babywalker(1).jpeg",
+      "/img/baby/babywalker(2).jpeg",
+      "/img/baby/babywalker(3).jpeg"
+    ],
+    features: ["Adjustable height", "Safety stoppers", "Comfort seat"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 95,
+    name: "Marshmallow Smart High Chair",
+    description: "Smart, easy-to-clean high chair with comfortable cushioning for mealtime.",
+    price: 0,
+    category: "baby",
+    age: "6-36 months",
+    image: "/img/baby/marshmalow_smart_high_chair(1).jpeg",
+    images: [
+      "/img/baby/marshmalow_smart_high_chair(1).jpeg",
+      "/img/baby/marshmalow_smart_high_chair(2).jpeg"
+    ],
+    features: ["Easy to clean", "Comfort cushion", "Stable frame"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 96,
+    name: "RoyalRise High Chair",
+    description: "Premium multi-position high chair with adjustable tray and comfortable seat.",
+    price: 0,
+    category: "baby",
+    age: "6-36 months",
+    image: "/img/baby/royalrise_highchair(1).jpeg",
+    images: [
+      "/img/baby/royalrise_highchair(1).jpeg",
+      "/img/baby/royalrise_highchair(2).jpeg",
+      "/img/baby/royalrise_highchair(3).jpeg",
+      "/img/baby/royalrise_highchair(4).jpeg"
+    ],
+    features: ["Adjustable tray", "Padded seat", "Easy fold"],
+    inStock: true,
+    rating: 4.8,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 97,
+    name: "Truffle 4-in-1 High Chair",
+    description: "Convertible high chair that grows with your child from infant to toddler.",
+    price: 0,
+    category: "baby",
+    age: "6-36 months",
+    image: "/img/baby/truffle_4_in_1_high_chair.jpeg",
+    images: [
+      "/img/baby/truffle_4_in_1_high_chair.jpeg"
+    ],
+    features: ["4-in-1 design", "Comfort padding", "Stable base"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 98,
+    name: "Royal Rider Tricycle",
+    description: "Stylish tricycle with safety features for fun and secure riding.",
+    price: 0,
+    category: "baby",
+    age: "2-5 years",
+    image: "/img/baby/royal_rider_tricycle.jpeg",
+    images: [
+      "/img/baby/royal_rider_tricycle.jpeg"
+    ],
+    features: ["Safety belt", "Comfort seat", "Durable wheels"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 99,
+    name: "Elite Platinum 6-in-1 Tricycle",
+    description: "Premium 6-in-1 tricycle that adapts to your child's growth stages.",
+    price: 0,
+    category: "baby",
+    age: "1-5 years",
+    image: "/img/baby/elite_platinum_6_in_1_tricycle.jpg",
+    images: [
+      "/img/baby/elite_platinum_6_in_1_tricycle.jpg"
+    ],
+    features: ["6-in-1 modes", "Parent handle", "All-terrain wheels"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 100,
+    name: "LoveBaby Tricycle",
+    description: "Comfortable and safe tricycle designed for early riders.",
+    price: 0,
+    category: "baby",
+    age: "2-5 years",
+    image: "/img/baby/lovebaby_tricycle.jpg",
+    images: [
+      "/img/baby/lovebaby_tricycle.jpg"
+    ],
+    features: ["Comfort seat", "Safety harness", "Smooth ride"],
+    inStock: true,
+    rating: 4.4,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 101,
+    name: "EVO Tricycle",
+    description: "Durable tricycle with ergonomic design for toddlers.",
+    price: 0,
+    category: "baby",
+    age: "2-5 years",
+    image: "/img/baby/evo_tricycle.jpg",
+    images: [
+      "/img/baby/evo_tricycle.jpg"
+    ],
+    features: ["Ergonomic design", "Sturdy frame", "Soft grips"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 102,
+    name: "Safari Cruz Baby Ride-On",
+    description: "Fun safari-themed ride-on for toddlers to enjoy indoors and outdoors.",
+    price: 0,
+    category: "baby",
+    age: "1-4 years",
+    image: "/img/baby/safari_cruz_baby_ride_on.jpg",
+    images: [
+      "/img/baby/safari_cruz_baby_ride_on.jpg"
+    ],
+    features: ["Safari theme", "Wide wheels", "Easy grip"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 103,
+    name: "Starlight Ride-On",
+    description: "Sparkling ride-on toy with sturdy wheels and comfortable seat for toddlers.",
+    price: 0,
+    category: "baby",
+    age: "1-4 years",
+    image: "/img/baby/starlight_ride_on.jpg",
+    images: [
+      "/img/baby/starlight_ride_on.jpg"
+    ],
+    features: ["Sturdy wheels", "Comfort seat", "Bright design"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 104,
+    name: "Saffari Rattle Set",
+    description: "Engaging safari-themed rattle set to stimulate sensory development.",
+    price: 0,
+    category: "baby",
+    age: "0-2 years",
+    image: "/img/baby/saffari_rattle_set.jpg",
+    images: [
+      "/img/baby/saffari_rattle_set.jpg"
+    ],
+    features: ["Soft grip", "Safe materials", "Bright colors"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 105,
+    name: "Cute Companion Rattle Set",
+    description: "Adorable rattle set designed for early sensory development and play.",
+    price: 0,
+    category: "baby",
+    age: "0-2 years",
+    image: "/img/baby/cute_companion_rattle_set.jpg",
+    images: [
+      "/img/baby/cute_companion_rattle_set.jpg"
+    ],
+    features: ["Safe materials", "Lightweight", "Bright colors"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 106,
+    name: "Baby Paddle Piano",
+    description: "Interactive paddle piano to encourage early musical exploration.",
+    price: 0,
+    category: "baby",
+    age: "0-3 years",
+    image: "/img/baby/baby_paddle_piano.jpg",
+    images: [
+      "/img/baby/baby_paddle_piano.jpg"
+    ],
+    features: ["Soft keys", "Sensory play", "Portable"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false
+  },
+  {
+    id: 107,
+    name: "Baby Piano Fitness Rack",
+    description: "Multi-activity fitness rack with piano to keep babies engaged and active.",
+    price: 0,
+    category: "baby",
+    age: "0-2 years",
+    image: "/img/baby/baby_piano_fitness_rack.jpg",
+    images: [
+      "/img/baby/baby_piano_fitness_rack.jpg"
+    ],
+    features: ["Multi-activity", "Detachable toys", "Soft mat"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false
   }
 ];
 
 export const categories = [
   { id: "cars/rideables", name: "Cars & Rideables", icon: "🚗" },
   { id: "bikes", name: "Bikes & Rideables", icon: "🚲" },
-  { id: "rakhdi", name: "Rakhdi", icon: "🎪" },
-  { id: "cradles baby toys", name: "Cradles & Baby Toys", icon: "👶" },
-  { id: "electronics", name: "Electronics", icon: "📱" }
+  { id: "electronics", name: "Electronics", icon: "📱" },
+  { id: "baby", name: "Baby Products", icon: "🍼" }
 ]; 
