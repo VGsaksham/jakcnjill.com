@@ -12,6 +12,7 @@ export interface Toy {
   rating: number;
   reviews: number;
   showPrice: boolean;
+  keywords?: string[];
 }
 
 export const toys: Toy[] = [
@@ -2123,6 +2124,293 @@ export const toys: Toy[] = [
     rating: 4.6,
     reviews: 0,
     showPrice: false
+  },
+  {
+    id: 123,
+    name: "Roomie Glide Bedside Cradle",
+    description: "Bedside sleeper with smooth glide motion for gentle soothing and easy nighttime feeding. Breathable mesh sides and adjustable height for most beds.",
+    price: 0,
+    category: "baby",
+    age: "0-6 months",
+    image: "/img/test_baby/roomie glide1.png",
+    images: [
+      "/img/test_baby/roomie glide1.png",
+      "/img/test_baby/roomie glide2.png",
+      "/img/test_baby/roomie glide3.png"
+    ],
+    features: ["Glide motion", "Breathable mesh", "Adjustable height", "Bedside attachment"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["cradle", "bedside sleeper", "bassinet", "newborn bed", "rooming-in", "soothing", "mesh sides"]
+  },
+  {
+    id: 124,
+    name: "i-Spin Grow 360 Convertible Car Seat",
+    description: "360° rotating convertible car seat that grows from rear-facing infant to forward-facing toddler with advanced side impact protection.",
+    price: 0,
+    category: "baby",
+    age: "0-7 years",
+    image: "/img/test_baby/i-Spin Grow™1.png",
+    images: [
+      "/img/test_baby/i-Spin Grow™1.png",
+      "/img/test_baby/i-Spin Grow™2.png"
+    ],
+    features: ["360° spin", "Side impact protection", "ISOFIX/LATCH", "Newborn insert"],
+    inStock: true,
+    rating: 4.8,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["car seat", "convertible car seat", "360 spin seat", "isofix", "rear facing", "forward facing", "toddler car seat"]
+  },
+  {
+    id: 125,
+    name: "i-Level Recline Infant Car Seat",
+    description: "Lie-flat infant carrier with deep recline for healthier spine and airway alignment, travel system compatible.",
+    price: 0,
+    category: "baby",
+    age: "0-15 months",
+    image: "/img/test_baby/i-Level™ Recline1.png",
+    images: [
+      "/img/test_baby/i-Level™ Recline1.png",
+      "/img/test_baby/i-Level™ Recline2.png"
+    ],
+    features: ["Lie-flat recline", "Side impact protection", "Travel system ready", "Newborn insert"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["infant car seat", "lie-flat", "newborn carrier", "i-size", "stroller compatible"]
+  },
+  {
+    id: 126,
+    name: "i-Snug 2 Infant Car Seat",
+    description: "Lightweight i-Size infant carrier with enhanced side impact protection and newborn support for safe first rides.",
+    price: 0,
+    category: "baby",
+    age: "0-12 months",
+    image: "/img/test_baby/i-Snug 2 1.png",
+    images: [
+      "/img/test_baby/i-Snug 2 1.png"
+    ],
+    features: ["i-Size certified", "Lightweight", "Side impact protection", "Newborn insert"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["infant car seat", "i-size", "lightweight", "newborn car seat"]
+  },
+  {
+    id: 127,
+    name: "Gemm Infant Car Seat",
+    description: "Comfortable, secure infant car seat with side impact protection and easy base installation for everyday travel.",
+    price: 0,
+    category: "baby",
+    age: "0-12 months",
+    image: "/img/test_baby/gemm™1.png",
+    images: [
+      "/img/test_baby/gemm™1.png",
+      "/img/test_baby/gemm™2.png",
+      "/img/test_baby/gemm™3.png"
+    ],
+    features: ["Side impact protection", "Base compatible", "Newborn support", "Sun canopy"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["infant car seat", "newborn carrier", "travel system", "joie gemm"]
+  },
+  {
+    id: 128,
+    name: "Mimzy Spin 3in1 Highchair",
+    description: "Multi-stage highchair with 360° spin for easy feeding, adjustable height and recline for growing babies and toddlers.",
+    price: 0,
+    category: "baby",
+    age: "6 months+",
+    image: "/img/test_baby/mimzy spin 3in1 1.png",
+    images: [
+      "/img/test_baby/mimzy spin 3in1 1.png",
+      "/img/test_baby/mimzy spin 3in1 2.png",
+      "/img/test_baby/mimzy spin 3in1 3.png"
+    ],
+    features: ["360° rotate", "Adjustable height", "Recline seat", "Dishwasher-safe tray"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["highchair", "feeding chair", "360 high chair", "baby dining", "booster"]
+  },
+  {
+    id: 129,
+    name: "Snacker 2in1 Highchair",
+    description: "Lightweight foldable highchair that converts to a booster, with wipe-clean surfaces and compact storage.",
+    price: 0,
+    category: "baby",
+    age: "6 months+",
+    image: "/img/test_baby/Snacker 2in1 1.png",
+    images: [
+      "/img/test_baby/Snacker 2in1 1.png",
+      "/img/test_baby/Snacker 2in1 2.png"
+    ],
+    features: ["2-in-1 booster", "Compact fold", "Wipe-clean", "Lightweight"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["high chair", "booster seat", "folding highchair", "feeding"]
+  },
+  {
+    id: 130,
+    name: "Steadi R129 Convertible Car Seat",
+    description: "R129 i-Size convertible car seat suitable from birth to toddlerhood with side impact protection and multiple recline positions.",
+    price: 0,
+    category: "baby",
+    age: "0-4 years",
+    image: "/img/test_baby/steadi™ R129 1.png",
+    images: [
+      "/img/test_baby/steadi™ R129 1.png",
+      "/img/test_baby/steadi™ R129 2.png"
+    ],
+    features: ["R129 i-Size", "Rear & forward facing", "Recline positions", "Side impact protection"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["car seat", "convertible", "i-size", "r129", "rear facing", "forward facing"]
+  },
+  {
+    id: 131,
+    name: "Tilt Group 0+/1 Car Seat",
+    description: "Versatile group 0+/1 car seat with rear- and forward-facing modes, cushioned support, and simple belt install.",
+    price: 0,
+    category: "baby",
+    age: "0-4 years",
+    image: "/img/test_baby/tilt™1.png",
+    images: [
+      "/img/test_baby/tilt™1.png",
+      "/img/test_baby/tilt™2.png"
+    ],
+    features: ["Group 0+/1", "Rear & forward facing", "Belt install", "Cushioned support"],
+    inStock: true,
+    rating: 4.4,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["car seat", "group 0+", "group 1", "belt install", "toddler seat"]
+  },
+  {
+    id: 132,
+    name: "Roomie Glide Co-Sleeper Bassinet",
+    description: "Compact co-sleeper bassinet with smooth glide to comfort newborns, height adjustable to align with parents' bed.",
+    price: 0,
+    category: "baby",
+    age: "0-6 months",
+    image: "/img/test_baby/roomie glide1.png",
+    images: [
+      "/img/test_baby/roomie glide1.png",
+      "/img/test_baby/roomie glide2.png"
+    ],
+    features: ["Bedside mode", "Glide soothe", "Adjustable height", "Breathable mesh"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["bassinet", "co-sleeper", "cradle", "bedside crib", "newborn"]
+  },
+  {
+    id: 133,
+    name: "Dreamer Rocker/Bouncer",
+    description: "Lightweight rocker and bouncer combo with soft seat, gentle motion, and soothing features for naps and playtime.",
+    price: 0,
+    category: "baby",
+    age: "0-9 months",
+    image: "/img/test_baby/dreamer™1.png",
+    images: [
+      "/img/test_baby/dreamer™1.png",
+      "/img/test_baby/dreamer™2.png"
+    ],
+    features: ["Rocker & bouncer", "Soft padding", "Compact fold", "Soothing motion"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["rocker", "bouncer", "soother", "infant seat"]
+  },
+  {
+    id: 134,
+    name: "Commuter Change & Snooze Travel Cot",
+    description: "All-in-one travel cot with changing unit and napper for convenient travel and stayovers. Quick fold and carry bag included.",
+    price: 0,
+    category: "baby",
+    age: "0-3 years",
+    image: "/img/test_baby/commuter change & snooze - linen gray1.png",
+    images: [
+      "/img/test_baby/commuter change & snooze - linen gray1.png",
+      "/img/test_baby/commuter change & snooze - linen gray2.png"
+    ],
+    features: ["Travel cot", "Changer", "Napper", "Quick fold"],
+    inStock: true,
+    rating: 4.6,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["travel cot", "playard", "playpen", "changer", "napper"]
+  },
+  {
+    id: 135,
+    name: "Pact Lightweight Stroller",
+    description: "Compact lightweight stroller with one-hand fold and travel system compatibility for city and travel use.",
+    price: 0,
+    category: "baby",
+    age: "6 months+",
+    image: "/img/test_baby/Pact1.png",
+    images: [
+      "/img/test_baby/Pact1.png",
+      "/img/test_baby/Pact2.png"
+    ],
+    features: ["Lightweight", "Compact fold", "Travel system ready", "Recline seat"],
+    inStock: true,
+    rating: 4.5,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["stroller", "pushchair", "buggy", "travel stroller", "compact"]
+  },
+  {
+    id: 136,
+    name: "Multiply 6in1 Highchair",
+    description: "Versatile 6-in-1 seating system from infant highchair to booster and toddler chair for years of use.",
+    price: 0,
+    category: "baby",
+    age: "6 months+",
+    image: "/img/test_baby/multiply™ 6in1 1.png",
+    images: [
+      "/img/test_baby/multiply™ 6in1 1.png",
+      "/img/test_baby/multiply™ 6in1 2.png"
+    ],
+    features: ["6-in-1 seat", "Booster mode", "Toddler chair", "Wipe-clean"],
+    inStock: true,
+    rating: 4.7,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["highchair", "6 in 1 high chair", "booster", "toddler chair", "feeding"]
+  },
+  {
+    id: 137,
+    name: "Wish Bouncer",
+    description: "Cozy bouncer with soft fabrics and gentle bouncing motion to comfort newborns during awake time.",
+    price: 0,
+    category: "baby",
+    age: "0-6 months",
+    image: "/img/test_baby/wish™1.png",
+    images: [
+      "/img/test_baby/wish™1.png",
+      "/img/test_baby/wish™2.png"
+    ],
+    features: ["Gentle bounce", "Soft fabrics", "Lightweight", "Compact"],
+    inStock: true,
+    rating: 4.4,
+    reviews: 0,
+    showPrice: false,
+    keywords: ["bouncer", "infant seat", "soother", "newborn"]
   }
 ];
 

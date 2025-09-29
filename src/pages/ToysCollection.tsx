@@ -17,8 +17,11 @@ const ToysCollection: React.FC = () => {
 
   const filteredAndSortedToys = useMemo(() => {
     let filtered = toys.filter(toy => {
-      const matchesSearch = toy.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           toy.description.toLowerCase().includes(searchTerm.toLowerCase());
+      const lower = searchTerm.toLowerCase();
+      const matchesName = toy.name.toLowerCase().includes(lower);
+      const matchesDescription = toy.description.toLowerCase().includes(lower);
+      const matchesKeywords = Array.isArray(toy.keywords) && toy.keywords.some(k => k.toLowerCase().includes(lower));
+      const matchesSearch = matchesName || matchesDescription || matchesKeywords;
       const matchesCategory = !categoryFilter || toy.category === categoryFilter;
       return matchesSearch && matchesCategory;
     });
@@ -151,7 +154,7 @@ const ToysCollection: React.FC = () => {
               <div key={toy.id} className={`product-card ${!toy.inStock ? 'out-of-stock' : ''}`}>
                 <div className="card-image-container">
                   <Zoom>
-                    <img src={toy.image} alt={toy.name} className="card-image" loading="lazy" />
+                    <img src={encodeURI(toy.image)} alt={toy.name} className="card-image" loading="lazy" />
                   </Zoom>
                   {!toy.inStock && <div className="out-of-stock-badge">Out of Stock</div>}
                   <div className="card-badge">20% OFF</div>

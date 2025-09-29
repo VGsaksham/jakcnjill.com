@@ -57,7 +57,7 @@ const ProductDetails: React.FC = () => {
   const handleWhatsAppClick = (number: string) => {
     const productUrl = `https://jakcnjill.com/toy/${toy.id}`;
     const imagePath = toy.images && toy.images.length > 0 ? (toy.images[selectedImage] || toy.image) : toy.image;
-    const imageUrl = `https://jakcnjill.com${imagePath}`;
+    const imageUrl = `https://jakcnjill.com${encodeURI(imagePath)}`;
     const message = `Hi! I'm interested in the ${toy.name} toy.\nProduct link: ${productUrl}\nImage: ${imageUrl}\nCan you provide more details about availability and pricing?`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${number.replace(/\D/g, '')}?text=${encodedMessage}`;
@@ -142,7 +142,7 @@ const ProductDetails: React.FC = () => {
             >
               <Zoom>
                 <img 
-                  src={toy.images[selectedImage] || toy.image} 
+                  src={encodeURI(toy.images[selectedImage] || toy.image)} 
                   alt={toy.name} 
                   className="hero-image"
                 />
@@ -162,13 +162,13 @@ const ProductDetails: React.FC = () => {
                     className={`thumbnail ${selectedImage === index ? 'active' : ''}`}
                     onClick={() => setSelectedImage(index)}
                   >
-                    <img src={image} alt={`${toy.name} view ${index + 1}`} />
+                    <img src={encodeURI(image)} alt={`${toy.name} view ${index + 1}`} />
                   </div>
                 ))
               ) : (
                 // Fallback to single image if no variants exist
                 <div className="thumbnail active">
-                  <img src={toy.image} alt={toy.name} />
+                  <img src={encodeURI(toy.image)} alt={toy.name} />
                 </div>
               )}
             </div>
